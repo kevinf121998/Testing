@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Protect your bond with time-stamped photos and ready-to-send letters. Move-in dossier delivered in under 10 minutes. No flatmate logins needed.">
+    <meta name="keywords" content="rental bond, tenancy evidence, flat coordination, move-in inspection, bond protection, head tenant, New Zealand rental">
+    
+    <meta property="og:title" content="Head Tenant Copilot - Protect Your Bond in Under 10 Minutes">
+    <meta property="og:description" content="Guided photos, ready-made letters, and a shareable report—done in under 10 minutes. No flatmate logins. Your photos stay in Drive.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://headtenantcopilot.nz">
+    <meta property="og:image" content="https://headtenantcopilot.nz/assets/og-image.jpg">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Head Tenant Copilot - Protect Your Bond in Under 10 Minutes">
+    <meta name="twitter:description" content="Guided photos, ready-made letters, and a shareable report—done in under 10 minutes. No flatmate logins needed.">
+    <meta name="twitter:image" content="https://headtenantcopilot.nz/assets/og-image.jpg">
+    
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    
+    <title>Head Tenant Copilot - Protect Your Bond in Under 10 Minutes</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        midnight: '#0F172A',
+                        cloud: '#F8FAFC',
+                        'accent-lime': '#84CC16',
+                        slate: '#334155',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Head Tenant Copilot",
+        "url": "https://headtenantcopilot.nz",
+        "logo": "https://headtenantcopilot.nz/assets/logo.png",
+        "description": "Protect your bond with time-stamped photos and ready-to-send letters. Dossier delivered in under 10 minutes.",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "Customer Support",
+            "email": "hello@headtenantcopilot.nz"
+        }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Do flatmates need accounts?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. You buy a pack and send one-tap links. Flatmates click, snap photos, done. Everything saves to your Drive. No login. No app."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is this legal advice?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. We provide templates and RTA citations, not legal advice. For disputes, contact Tenancy Services or a lawyer."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What if my tenancy PDF is messy or I don't have it yet?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "AI-assist (optional) can pull dates from scanned PDFs. No PDF? Use our quick form to enter move-in date, bond, and landlord details."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Will agents accept Drive links?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Everything exports as PDF and .ics files. Email them directly. Drive links are backup. Agents accept PDFs everywhere."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Where does AI help (and not)?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "AI-assist (optional) extracts dates from messy PDFs, explains RTA clauses, and polishes letter tone. Everything else is standard: photo timestamps, templates, calendar files. You always see sources and can override."
+                }
+            }
+        ]
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Move-in Evidence Pack",
+        "description": "Time-stamped photos, condition report PDF, ready-to-send letters, and calendar reminders. Done in under 10 minutes.",
+        "brand": {
+            "@type": "Organization",
+            "name": "Head Tenant Copilot"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "12.00",
+            "priceCurrency": "NZD",
+            "availability": "https://schema.org/InStock",
+            "url": "https://headtenantcopilot.nz#pricing"
+        }
+    }
+    </script>
+</head>
+<body class="bg-cloud text-slate antialiased">
+    <a href="#main" class="skip-link">Skip to main content</a>
+    
+    <nav class="sticky top-0 z-50 bg-midnight/95 backdrop-blur-sm border-b border-slate-700/50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#" class="text-cloud font-bold text-lg sm:text-xl hover:text-accent-lime transition-colors">
+                        Head Tenant Copilot
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="#features" class="nav-link">Features</a>
+                    <a href="#how-it-works" class="nav-link">How it works</a>
+                    <a href="#pricing" class="nav-link">Pricing</a>
+                    <a href="#faq" class="nav-link">FAQ</a>
+                    <a href="#pricing" class="bg-accent-lime text-midnight px-5 py-2 rounded-lg font-semibold hover:bg-lime-400 transition-all hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-accent-lime focus:ring-offset-2 focus:ring-offset-midnight">
+                        Get the Pack
+                    </a>
+                </div>
+                <button id="mobile-menu-button" class="md:hidden text-cloud p-2 rounded-lg hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-accent-lime" aria-label="Toggle menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="#features" class="nav-link-mobile">Features</a>
+                    <a href="#how-it-works" class="nav-link-mobile">How it works</a>
+                    <a href="#pricing" class="nav-link-mobile">Pricing</a>
+                    <a href="#faq" class="nav-link-mobile">FAQ</a>
+                    <a href="#pricing" class="bg-accent-lime text-midnight px-5 py-2 rounded-lg font-semibold text-center hover:bg-lime-400 transition-all">
+                        Get the Pack
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main">
+        <section class="hero-section bg-gradient-to-br from-midnight via-slate-900 to-slate-800 text-cloud">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28 lg:py-36">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+                        Protect your bond in under 10 minutes.
+                    </h1>
+                    <p class="text-xl sm:text-2xl text-slate-300 mb-10 leading-relaxed">
+                        Guided photos, ready-made letters, and a shareable report—done fast.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
+                        <a href="#pricing" class="cta-primary group">
+                            Get Move-in Pack — NZ$12
+                            <span class="inline-block ml-2 px-2 py-0.5 text-xs bg-midnight/40 rounded-full">No flatmate logins</span>
+                        </a>
+                        <a href="assets/sample-report.pdf" target="_blank" class="cta-secondary">
+                            See sample report (PDF)
+                            <svg class="w-5 h-5 ml-2 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="trust-row">
+                        <div class="flex flex-wrap items-center justify-center gap-6 text-sm text-slate-400">
+                            <div class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-accent-lime" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span>No flatmate logins</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-accent-lime" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span>Your photos stay in your Drive</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-accent-lime" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span>AI-assist optional, always explainable</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-12 bg-white border-b border-slate-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16">
+                    <div class="text-center">
+                        <p class="text-sm text-slate-500 mb-2">Trusted by renters</p>
+                        <blockquote class="text-lg font-medium text-slate-700 italic max-w-md">
+                            "Full bond back. The before/after photos proved we left it spotless."
+                        </blockquote>
+                        <p class="text-sm text-slate-500 mt-2">— Sarah, Wellington flat of 4</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-sm text-slate-500 mb-2">Simple coordination</p>
+                        <blockquote class="text-lg font-medium text-slate-700 italic max-w-md">
+                            "No more chasing flatmates. Everyone got their room done in minutes."
+                        </blockquote>
+                        <p class="text-sm text-slate-500 mt-2">— James, Auckland head tenant</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="py-20 bg-cloud">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-midnight mb-4">Get your bond back with proof, not stress</h2>
+                    <p class="text-xl text-slate-600 max-w-2xl mx-auto">Four tools that turn chaos into a clean dossier</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="feature-card">
+                        <div class="feature-icon bg-accent-lime/10">
+                            <svg class="w-8 h-8 text-accent-lime" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-midnight mb-3">Time-stamped proof landlords accept</h3>
+                        <p class="text-slate-600 leading-relaxed">
+                            Room-by-room photo guide with auto timestamps. Your evidence is dated, organised, and tamper-proof.
+                        </p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon bg-accent-lime/10">
+                            <svg class="w-8 h-8 text-accent-lime" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-midnight mb-3">Get flatmates on board, zero admin</h3>
+                        <p class="text-slate-600 leading-relaxed">
+                            Send each flatmate a one-tap link for their room. They click, snap, done. All photos save to your Drive.
+                        </p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon bg-accent-lime/10">
+                            <svg class="w-8 h-8 text-accent-lime" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-midnight mb-3">Letters with RTA citations built in</h3>
+                        <p class="text-slate-600 leading-relaxed">
+                            Maintenance requests, notice letters, bond challenges. RTA citations included. Just fill your details and send.
+                        </p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon bg-accent-lime/10">
+                            <svg class="w-8 h-8 text-accent-lime" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-midnight mb-3">Never miss inspection or bond deadlines</h3>
+                        <p class="text-slate-600 leading-relaxed">
+                            Calendar files (.ics) for inspections, notice periods, and bond windows. Add to your phone, get reminders.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-midnight mb-4">How it works</h2>
+                    <p class="text-xl text-slate-600 max-w-2xl mx-auto">From purchase to dossier in under 10 minutes</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-accent-lime rounded-full flex items-center justify-center text-midnight font-bold text-2xl mx-auto mb-4">1</div>
+                        <h3 class="text-lg font-bold text-midnight mb-2">Buy and upload</h3>
+                        <p class="text-slate-600">Choose your pack. Upload tenancy PDF or fill the quick form with move-in date and bond.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-accent-lime rounded-full flex items-center justify-center text-midnight font-bold text-2xl mx-auto mb-4">2</div>
+                        <h3 class="text-lg font-bold text-midnight mb-2">Share links</h3>
+                        <p class="text-slate-600">Send each flatmate a one-tap link. They click, take photos, done. No login. No app.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-accent-lime rounded-full flex items-center justify-center text-midnight font-bold text-2xl mx-auto mb-4">3</div>
+                        <h3 class="text-lg font-bold text-midnight mb-2">Capture</h3>
+                        <p class="text-slate-600">All photos land in your Drive with timestamps. We compile them into a dossier PDF plus letters.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-accent-lime rounded-full flex items-center justify-center text-midnight font-bold text-2xl mx-auto mb-4">4</div>
+                        <h3 class="text-lg font-bold text-midnight mb-2">Send</h3>
+                        <p class="text-slate-600">Download your PDF dossier and calendar files. Email to landlord. Job done in under 10 minutes.</p>
+                    </div>
+                </div>
+                <div class="max-w-3xl mx-auto bg-slate-50 rounded-xl p-6 border border-slate-200">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0">
+                            <svg class="w-6 h-6 text-accent-lime" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M13 7H7v6h6V7z"></path>
+                                <path fill-rule="evenodd" d="M7 2a1 1 0 012 0v1h2V2a1 1 0 112 0v1h2a2 2 0 012 2v2h1a1 1 0 110 2h-1v2h1a1 1 0 110 2h-1v2a2 2 0 01-2 2h-2v1a1 1 0 11-2 0v-1H9v1a1 1 0 11-2 0v-1H5a2 2 0 01-2-2v-2H2a1 1 0 110-2h1V9H2a1 1 0 010-2h1V5a2 2 0 012-2h2V2zM5 5h10v10H5V5z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-midnight mb-2">AI-assist (optional, always explainable)</h4>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                Pulls dates from messy PDFs, explains RTA clauses, polishes letter tone. You see sources and can override. Everything else is standard.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-gradient-to-r from-accent-lime/10 to-lime-100/50">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl font-bold text-midnight mb-3">Dossier delivered in under 10 minutes</h2>
+                    <p class="text-xl text-slate-700">Buy, capture, download, send—all done before your coffee goes cold</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="font-bold text-midnight mb-4">Quick checklist</h3>
+                            <ul class="space-y-3">
+                                <li class="flex items-start gap-3">
+                                    <svg class="w-6 h-6 text-accent-lime flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-slate-600">Buy pack and upload</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <svg class="w-6 h-6 text-accent-lime flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-slate-600">Send links to flatmates</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <svg class="w-6 h-6 text-accent-lime flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-slate-600">Flatmates take photos (3 min per room)</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <svg class="w-6 h-6 text-accent-lime flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-slate-600">Download PDF and calendar files</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <svg class="w-6 h-6 text-accent-lime flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-slate-600">Send to landlord/agent</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-midnight mb-4">Typical timeline</h3>
+                            <div class="space-y-4">
+                                <div>
+                                    <div class="flex justify-between text-sm mb-1">
+                                        <span class="text-slate-600">Setup</span>
+                                        <span class="font-medium text-midnight">~2 min</span>
+                                    </div>
+                                    <div class="h-2 bg-slate-200 rounded-full overflow-hidden">
+                                        <div class="h-full bg-accent-lime" style="width: 20%"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between text-sm mb-1">
+                                        <span class="text-slate-600">Photo missions (4 flatmates)</span>
+                                        <span class="font-medium text-midnight">~6 min</span>
+                                    </div>
+                                    <div class="h-2 bg-slate-200 rounded-full overflow-hidden">
+                                        <div class="h-full bg-accent-lime" style="width: 60%"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between text-sm mb-1">
+                                        <span class="text-slate-600">Compile & download</span>
+                                        <span class="font-medium text-midnight">~1 min</span>
+                                    </div>
+                                    <div class="h-2 bg-slate-200 rounded-full overflow-hidden">
+                                        <div class="h-full bg-accent-lime" style="width: 10%"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between text-sm mb-1">
+                                        <span class="text-slate-600">Send evidence</span>
+                                        <span class="font-medium text-midnight">~1 min</span>
+                                    </div>
+                                    <div class="h-2 bg-slate-200 rounded-full overflow-hidden">
+                                        <div class="h-full bg-accent-lime" style="width: 10%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-sm text-slate-500 mt-4 italic">Total: under 10 minutes from start to finish</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-cloud">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-midnight mb-4">Pick your pack</h2>
+                    <p class="text-xl text-slate-600 max-w-2xl mx-auto">PDFs, calendar files, and letters that work everywhere</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-white rounded-xl shadow-md p-6 border border-slate-200 hover:shadow-lg transition-shadow">
+                        <div class="w-12 h-12 bg-accent-lime/10 rounded-lg flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-accent-lime" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-bold text-midnight mb-2">Move-in Pack</h3>
+                        <p class="text-sm text-slate-600 mb-3">Time-stamped photos, condition report PDF, maintenance letters, calendar reminders</p>
+                        <p class="text-2xl font-bold text-midnight">NZ$12</p>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-md p-6 border border-slate-200 hover:shadow-lg transition-shadow">
+                        <div class="w-12 h-12 bg-accent-lime/10 rounded-lg flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-accent-lime" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-bold text-midnight mb-2">Inspection Pack</h3>
+                        <p class="text-sm text-slate-600 mb-3">Notice checker, prep checklist, breach and clarification letters, deadline reminders</p>
+                        <p class="text-2xl font-bold text-midnight">NZ$7</p>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-md p-6 border border-slate-200 hover:shadow-lg transition-shadow">
+                        <div class="w-12 h-12 bg-accent-lime/10 rounded-lg flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-accent-lime" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-bold text-midnight mb-2">Bond Defence Pack</h3>
+                        <p class="text-sm text-slate-600 mb-3">Before/after photo pairs, receipts timeline, itemised requests, challenge letters</p>
+                        <p class="text-2xl font-bold text-midnight">NZ$22</p>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-md p-6 border border-slate-200 hover:shadow-lg transition-shadow">
+                        <div class="w-12 h-12 bg-accent-lime/10 rounded-lg flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-accent-lime" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-bold text-midnight mb-2">Complete Bundle</h3>
+                        <p class="text-sm text-slate-600 mb-3">Move-in to bond return covered. Best value—saves NZ$6 and protects your whole tenancy.</p>
+                        <p class="text-2xl font-bold text-midnight">NZ$35 <span class="text-sm text-slate-500 line-through">NZ$41</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-midnight mb-4">Pay once. Use it. Done.</h2>
+                    <p class="text-xl text-slate-600 max-w-2xl mx-auto">No subscriptions. Just buy what you need when you need it.</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                    <div class="pricing-card">
+                        <h3 class="text-xl font-bold text-midnight mb-2">Move-in Pack</h3>
+                        <div class="text-4xl font-bold text-midnight mb-1">NZ$12</div>
+                        <p class="text-xs text-slate-500 mb-4">About 2 flat whites</p>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-accent-lime flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-sm text-slate-600">Time-stamped condition report</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-accent-lime flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-sm text-slate-600">Photo missions for flatmates</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-accent-lime flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-sm text-slate-600">Calendar reminders (.ics)</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-accent-lime flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-sm text-slate-600">Maintenance letter template</span>
+                            </li>
+                        </ul>
+                        <a href="#waitlist" class="btn-secondary">Get this pack</a>
+                    </div>
+                    <div class="pricing-card">
+                        <h3 class="text-xl font-bold text-midnight mb-2">Inspection Pack</h3>
+                        <div class="text-4xl font-bold text-midnight mb-1">NZ$7</div>
+                        <p class="text-xs text-slate-500 mb-4">Less than a beer at the pub</p>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-accent-lime flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-sm text-slate-600">Notice checker</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-accent-lime flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-sm text-slate-600">Prep checklist PDF</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-accent-lime flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-sm text-slate-600">Breach/clarification letters</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-accent-lime flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-sm text-slate-600">Deadline calendar files</span>
+                            </li>
+                        </ul>
+                        <a href="#waitlist" class="btn-secondary">Get this pack</a>
+                    </div>
+                    <div class="pricing-card">
+                        <h3 class="text-xl font-bold text-midnight mb-2">Bond Defence</h3>
+                        <div class="text-4xl font-bold text-midnight mb-1">NZ$22</div>
+                        <p class="text-xs text-slate-500 mb-4">Same as a Uber Eats order</p>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-accent-lime flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-sm text-slate-600">Before/after photo pairs</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-accent-lime flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-sm text-slate-600">Receipts timeline</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-accent-lime flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-sm text-slate-600">Itemised request letter</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-accent-lime flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-sm text-slate-600">Challenge letter template</span>
+                            </li>
+                        </ul>
+                        <a href="#waitlist" class="btn-secondary">Get this pack</a>
+                    </div>
+                    <div class="pricing-card border-2 border-accent-lime relative">
+                        <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                            <span class="bg-accent-lime text-midnight px-3 py-1 rounded-full text-sm font-bold">Most popular</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-midnight mb-2">Complete Bundle</h3>
+                        <div class="text-4xl font-bold text-midnight mb-1">NZ$35</div>
+                        <div class="text-sm text-slate-500 line-through">NZ$41 separately</div>
+                        <p class="text-xs text-slate-500 mb-3">Groceries for 2 days vs. losing your bond</p>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-accent-lime flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-sm text-slate-600"><strong>Move-in, inspection, bond defence</strong></span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-accent-lime flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-sm text-slate-600">Full tenancy protection</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-accent-lime flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-sm text-slate-600">Everything you need</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-accent-lime flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-sm text-slate-600">Save NZ$6</span>
+                            </li>
+                        </ul>
+                        <a href="#waitlist" class="btn-primary">Get the bundle</a>
+                        <p class="text-xs text-slate-500 mt-2 text-center">Most popular with new flats</p>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <p class="text-slate-600 flex items-center justify-center gap-2">
+                        <svg class="w-5 h-5 text-accent-lime" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        </svg>
+                        <strong>7-day happiness guarantee</strong> — full refund if it's not useful.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-white border-t border-slate-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-midnight mb-4">See exactly what you get</h2>
+                    <p class="text-xl text-slate-600 max-w-2xl mx-auto">Real example: A Wellington flat of 4 moving in on Saturday</p>
+                </div>
+
+                <div class="max-w-5xl mx-auto">
+                    <div class="space-y-8">
+                        <div class="flex gap-6 items-start">
+                            <div class="flex-shrink-0 w-24 text-right">
+                                <div class="inline-block bg-accent-lime text-midnight px-3 py-1 rounded-full text-sm font-bold">Saturday</div>
+                                <p class="text-xs text-slate-500 mt-1">11:00 AM</p>
+                            </div>
+                            <div class="flex-grow bg-cloud rounded-xl p-6 border-l-4 border-accent-lime">
+                                <h3 class="font-bold text-midnight mb-2 flex items-center gap-2">
+                                    <svg class="w-5 h-5 text-accent-lime" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path>
+                                    </svg>
+                                    Sarah buys Move-in Pack for NZ$12
+                                </h3>
+                                <p class="text-slate-600 text-sm">Uploads tenancy agreement PDF. System pulls move-in date (March 15), bond (NZ$3,200), landlord details.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-6 items-start">
+                            <div class="flex-shrink-0 w-24 text-right">
+                                <p class="text-xs text-slate-500 mt-1">11:05 AM</p>
+                            </div>
+                            <div class="flex-grow bg-cloud rounded-xl p-6 border-l-4 border-accent-lime">
+                                <h3 class="font-bold text-midnight mb-2 flex items-center gap-2">
+                                    <svg class="w-5 h-5 text-accent-lime" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                                    </svg>
+                                    Sends photo mission links to 3 flatmates
+                                </h3>
+                                <p class="text-slate-600 text-sm mb-3">Jake (lounge + bedroom 1), Emma (bedroom 2), Tom (bedroom 3 + bathroom). One-tap links, no logins.</p>
+                                <div class="bg-white rounded-lg p-3 border border-slate-300 text-xs font-mono text-slate-700">
+                                    <p>📱 Hey Jake - photo your room + lounge:</p>
+                                    <p class="text-accent-lime">→ headtenantcopilot.nz/m/abc123</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-6 items-start">
+                            <div class="flex-shrink-0 w-24 text-right">
+                                <p class="text-xs text-slate-500 mt-1">11:07 AM</p>
+                            </div>
+                            <div class="flex-grow bg-cloud rounded-xl p-6 border-l-4 border-accent-lime">
+                                <h3 class="font-bold text-midnight mb-2 flex items-center gap-2">
+                                    <svg class="w-5 h-5 text-accent-lime" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    All 4 people snap photos (28 photos total)
+                                </h3>
+                                <p class="text-slate-600 text-sm mb-3">Auto-named, timestamped, saved to Sarah's Drive folder.</p>
+                                <div class="grid grid-cols-2 gap-2 text-xs text-slate-600">
+                                    <div class="bg-white rounded p-2 border border-slate-200">
+                                        <span class="font-medium">✓ Lounge_wall_crack.jpg</span><br>
+                                        <span class="text-slate-500">11:08 AM · Jake</span>
+                                    </div>
+                                    <div class="bg-white rounded p-2 border border-slate-200">
+                                        <span class="font-medium">✓ Bedroom1_carpet_stain.jpg</span><br>
+                                        <span class="text-slate-500">11:09 AM · Jake</span>
+                                    </div>
+                                    <div class="bg-white rounded p-2 border border-slate-200">
+                                        <span class="font-medium">✓ Bedroom2_window.jpg</span><br>
+                                        <span class="text-slate-500">11:10 AM · Emma</span>
+                                    </div>
+                                    <div class="bg-white rounded p-2 border border-slate-200">
+                                        <span class="font-medium">✓ Bathroom_mould.jpg</span><br>
+                                        <span class="text-slate-500">11:11 AM · Tom</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-6 items-start">
+                            <div class="flex-shrink-0 w-24 text-right">
+                                <p class="text-xs text-slate-500 mt-1">11:15 AM</p>
+                            </div>
+                            <div class="flex-grow bg-cloud rounded-xl p-6 border-l-4 border-accent-lime">
+                                <h3 class="font-bold text-midnight mb-2 flex items-center gap-2">
+                                    <svg class="w-5 h-5 text-accent-lime" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v3.586l-1.293-1.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 11.586V8z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    Sarah downloads 3 files
+                                </h3>
+                                <div class="space-y-2">
+                                    <div class="bg-white rounded-lg p-3 border border-slate-300 flex items-center gap-3">
+                                        <svg class="w-8 h-8 text-red-500" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <div class="flex-grow">
+                                            <p class="font-medium text-sm">Condition_Report_15_Wellington_Rd.pdf</p>
+                                            <p class="text-xs text-slate-500">28 photos, timestamps, existing damage flagged</p>
+                                        </div>
+                                        <span class="text-xs text-slate-500">156 KB</span>
+                                    </div>
+                                    <div class="bg-white rounded-lg p-3 border border-slate-300 flex items-center gap-3">
+                                        <svg class="w-8 h-8 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm2 10a1 1 0 10-2 0v3a1 1 0 102 0v-3zm2-3a1 1 0 011 1v5a1 1 0 11-2 0v-5a1 1 0 011-1zm4-1a1 1 0 10-2 0v7a1 1 0 102 0V8z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <div class="flex-grow">
+                                            <p class="font-medium text-sm">Maintenance_Letter_Mould.pdf</p>
+                                            <p class="text-xs text-slate-500">RTA s45 citation, bathroom mould photos attached</p>
+                                        </div>
+                                        <span class="text-xs text-slate-500">24 KB</span>
+                                    </div>
+                                    <div class="bg-white rounded-lg p-3 border border-slate-300 flex items-center gap-3">
+                                        <svg class="w-8 h-8 text-purple-500" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <div class="flex-grow">
+                                            <p class="font-medium text-sm">Inspection_Reminders.ics</p>
+                                            <p class="text-xs text-slate-500">3-month, 6-month, move-out reminders</p>
+                                        </div>
+                                        <span class="text-xs text-slate-500">2 KB</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-6 items-start">
+                            <div class="flex-shrink-0 w-24 text-right">
+                                <p class="text-xs text-slate-500 mt-1">11:18 AM</p>
+                            </div>
+                            <div class="flex-grow bg-gradient-to-r from-accent-lime/10 to-lime-100/30 rounded-xl p-6 border-l-4 border-accent-lime">
+                                <h3 class="font-bold text-midnight mb-2 flex items-center gap-2">
+                                    <svg class="w-5 h-5 text-accent-lime" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                                    </svg>
+                                    Emails condition report to property manager
+                                </h3>
+                                <p class="text-slate-600 text-sm mb-2"><strong>Total time: 18 minutes.</strong> Bond protected. Everyone knows their part. Zero stress.</p>
+                                <div class="bg-white/60 rounded-lg p-3 text-xs text-slate-700 border border-slate-200">
+                                    <p class="font-medium">Subject: Move-in Condition Report - 15 Wellington Rd</p>
+                                    <p class="mt-1">Hi Joanne, Please find attached our condition report with time-stamped photos of all existing damage. We've also noted the bathroom mould issue and attached a maintenance request per RTA s45...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-12 text-center bg-midnight text-cloud rounded-xl p-8">
+                        <h3 class="text-2xl font-bold mb-3">That's what NZ$12 gets you</h3>
+                        <p class="text-slate-300 mb-6">Organised evidence, protected bond, zero admin. Done in under 20 minutes.</p>
+                        <a href="#pricing" class="inline-block bg-accent-lime text-midnight px-8 py-3 rounded-lg font-bold hover:bg-lime-400 transition-all">Get your pack now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="py-20 bg-cloud">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-midnight mb-4">Frequently asked questions</h2>
+                </div>
+                <div class="space-y-4">
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span class="font-semibold text-lg text-midnight">Do my flatmates need accounts?</span>
+                            <svg class="faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p class="text-slate-600 leading-relaxed">
+                                No. You buy a pack and send one-tap links. Flatmates click, snap photos, done. Everything saves to your Drive. No login. No app.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span class="font-semibold text-lg text-midnight">Is this legal advice?</span>
+                            <svg class="faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p class="text-slate-600 leading-relaxed">
+                                No. We provide templates and RTA citations, not legal advice. For disputes, contact Tenancy Services or a lawyer.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span class="font-semibold text-lg text-midnight">What if my tenancy PDF is messy or I don't have it yet?</span>
+                            <svg class="faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p class="text-slate-600 leading-relaxed">
+                                AI-assist (optional) can pull dates from scanned PDFs. No PDF? Use our quick form to enter move-in date, bond, and landlord details.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span class="font-semibold text-lg text-midnight">Will agents accept Drive links?</span>
+                            <svg class="faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p class="text-slate-600 leading-relaxed">
+                                Everything exports as PDF and .ics files. Email them directly. Drive links are backup. Agents accept PDFs everywhere.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span class="font-semibold text-lg text-midnight">Where does AI help (and not)?</span>
+                            <svg class="faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p class="text-slate-600 leading-relaxed">
+                                AI-assist (optional) extracts dates from messy PDFs, explains RTA clauses, and polishes letter tone. Everything else is standard: photo timestamps, templates, calendar files. You always see sources and can override.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="waitlist" class="py-20 bg-gradient-to-br from-midnight to-slate-800 text-cloud">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl sm:text-4xl font-bold mb-4">Get early access</h2>
+                    <p class="text-xl text-slate-300">Be first to know when packs launch. No spam.</p>
+                </div>
+                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20">
+                    <div class="mb-6">
+                        <label for="email" class="block text-sm font-medium mb-2">Email address</label>
+                        <input type="email" id="email" name="email" required class="w-full px-4 py-3 rounded-lg bg-white/90 text-midnight border-2 border-transparent focus:border-accent-lime focus:outline-none transition-colors" placeholder="you@example.com">
+                    </div>
+                    <div class="mb-6 space-y-3">
+                        <p class="text-sm font-medium">I am a:</p>
+                        <label class="flex items-center gap-3 cursor-pointer">
+                            <input type="checkbox" name="head_tenant" value="yes" class="w-5 h-5 rounded border-2 border-white/40 bg-white/20 text-accent-lime focus:ring-2 focus:ring-accent-lime focus:ring-offset-2 focus:ring-offset-midnight">
+                            <span>Head tenant or flatmate looking for bond protection</span>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer">
+                            <input type="checkbox" name="pm_landlord" value="yes" class="w-5 h-5 rounded border-2 border-white/40 bg-white/20 text-accent-lime focus:ring-2 focus:ring-accent-lime focus:ring-offset-2 focus:ring-offset-midnight">
+                            <span>Property manager or landlord interested in streamlined evidence</span>
+                        </label>
+                    </div>
+                    <button type="submit" class="w-full bg-accent-lime text-midnight font-bold py-4 px-6 rounded-lg hover:bg-lime-400 transition-all transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-accent-lime focus:ring-offset-2 focus:ring-offset-midnight">
+                        Join the waitlist
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-midnight text-cloud py-12 border-t border-slate-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Head Tenant Copilot</h3>
+                    <p class="text-slate-400 text-sm">Protect your bond in under 10 minutes.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Product</h4>
+                    <ul class="space-y-2 text-sm text-slate-400">
+                        <li><a href="#features" class="hover:text-accent-lime transition-colors">Features</a></li>
+                        <li><a href="#pricing" class="hover:text-accent-lime transition-colors">Pricing</a></li>
+                        <li><a href="assets/sample-report.pdf" class="hover:text-accent-lime transition-colors">Sample report</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2 text-sm text-slate-400">
+                        <li><a href="#faq" class="hover:text-accent-lime transition-colors">FAQ</a></li>
+                        <li><a href="mailto:hello@headtenantcopilot.nz" class="hover:text-accent-lime transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2 text-sm text-slate-400">
+                        <li><a href="#" class="hover:text-accent-lime transition-colors">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-accent-lime transition-colors">Terms of Service</a></li>
+                    </ul>
+                    <div class="mt-4">
+                        <p class="text-xs text-slate-500">Country: NZ 🇳🇿</p>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-slate-700 text-center text-sm text-slate-400">
+                <p>&copy; 2025 Head Tenant Copilot. Made with Head Tenant Copilot.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
